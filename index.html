@@ -1,27 +1,17 @@
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;id&quot;&gt;
-&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;/&gt;
-&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;/&gt;
-&lt;title&gt;MXM Premium Store&lt;/title&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;/&gt;
-&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin/&gt;
-&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
-&lt;style&gt;
-:root{
+<!doctype html><html lang="id"><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MXM Premium Store</title><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>:root{
   --bg:#03080f;--bg2:#060d1a;--card:#080f1e;--card2:#0b1427;
   --blue:#3b8eff;--blue-dim:#2070e0;--blue-dark:#0a2250;
   --glow:rgba(59,142,255,.13);--border:rgba(59,142,255,.18);--border2:rgba(59,142,255,.08);
   --text:#dce9ff;--text-dim:#6a8fbd;
-  --font:&apos;Inter&apos;,sans-serif;--font-d:&apos;Bebas Neue&apos;,sans-serif;
+  --font:'Inter',sans-serif;--font-d:'Bebas Neue',sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-body::before{content:&apos;&apos;;position:fixed;inset:0;
+body::before{content:'';position:fixed;inset:0;
   background-image:linear-gradient(rgba(59,142,255,.025)1px,transparent 1px),linear-gradient(90deg,rgba(59,142,255,.025)1px,transparent 1px);
   background-size:52px 52px;pointer-events:none;z-index:0}
-body::after{content:&apos;&apos;;position:fixed;inset:0;
+body::after{content:'';position:fixed;inset:0;
   background:radial-gradient(ellipse 55% 35% at 50% 0%,rgba(59,142,255,.07) 0%,transparent 70%),
              radial-gradient(ellipse 35% 25% at 85% 85%,rgba(30,100,220,.05) 0%,transparent 60%);
   pointer-events:none;z-index:0}
@@ -100,7 +90,7 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
 /* SECTION LABELS */
 .s-label{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3px;
   text-transform:uppercase;color:var(--blue);margin-bottom:14px;font-weight:700}
-.s-label::before{content:&apos;&apos;;width:20px;height:2px;background:var(--blue);border-radius:2px}
+.s-label::before{content:'';width:20px;height:2px;background:var(--blue);border-radius:2px}
 .s-title{font-family:var(--font-d);font-size:clamp(38px,6vw,60px);color:#fff;
   line-height:1.05;margin-bottom:14px;letter-spacing:1px}
 .s-title .ac{color:var(--blue)}
@@ -119,7 +109,7 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
   text-shadow:0 0 60px rgba(59,142,255,.18);margin-bottom:4px}
 .hero-h1 .sub{color:var(--blue);display:block;text-shadow:0 0 50px rgba(59,142,255,.45)}
 .hero-rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px 0 14px}
-.hero-rule::before,.hero-rule::after{content:&apos;&apos;;flex:1;max-width:72px;height:1px;background:var(--border2)}
+.hero-rule::before,.hero-rule::after{content:'';flex:1;max-width:72px;height:1px;background:var(--border2)}
 .hero-rule span{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-dim)}
 .hero-p{font-size:15px;color:var(--text-dim);line-height:1.75;max-width:520px;margin:0 auto 36px}
 .hero-p strong{color:var(--text)}
@@ -149,7 +139,7 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:14px;margin-top:44px}
 .feat-card{background:var(--card);border:1px solid var(--border2);border-radius:18px;
   padding:26px;position:relative;overflow:hidden;transition:all .28s}
-.feat-card::after{content:&apos;&apos;;position:absolute;top:0;left:0;right:0;height:1px;
+.feat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;
   background:linear-gradient(90deg,transparent,var(--blue),transparent);opacity:0;transition:opacity .3s}
 .feat-card:hover{border-color:var(--border);transform:translateY(-3px);background:var(--card2);
   box-shadow:0 14px 36px rgba(0,0,0,.28),0 0 16px rgba(59,142,255,.06)}
@@ -178,7 +168,7 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
   padding:26px;position:relative;overflow:hidden;transition:all .28s}
 .price-card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.3)}
 .price-card.pop{border-color:var(--blue);background:var(--card2);box-shadow:0 0 24px rgba(59,142,255,.08)}
-.price-card.pop::before{content:&apos;&apos;;position:absolute;top:0;left:0;right:0;height:2px;background:var(--blue)}
+.price-card.pop::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--blue)}
 .pop-badge{position:absolute;top:14px;right:14px;padding:3px 11px;background:var(--blue);color:#fff;
   font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;border-radius:5px}
 .pr-dur{font-family:var(--font-d);font-size:30px;color:#fff;letter-spacing:1px;margin-bottom:4px}
@@ -192,7 +182,7 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
 .pr-list li{display:flex;align-items:center;gap:9px;padding:7px 0;
   border-bottom:1px solid var(--border2);font-size:13px;color:var(--text-dim)}
 .pr-list li:last-child{border-bottom:none}
-.pr-list li::before{content:&apos;&apos;;width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.pr-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0}
 .pr-btn{display:block;width:100%;padding:12px;border-radius:11px;font-size:13px;font-weight:700;
   letter-spacing:.4px;text-decoration:none;text-align:center;transition:all .22s;cursor:pointer;border:none}
 .pr-btn-p{background:var(--blue);color:#fff;box-shadow:0 0 18px rgba(59,142,255,.22)}
@@ -254,7 +244,7 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
 .ft-sub{font-size:12px;color:var(--text-dim);margin-bottom:20px}
 .ft-copy{font-size:11px;color:var(--text-dim);opacity:.45}
 
-/* SOLD &amp; SCROLL TOP */
+/* SOLD & SCROLL TOP */
 .sold{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--card2);
   border:1px solid var(--border);border-radius:12px;padding:11px 16px;
   font-size:12px;font-weight:600;color:var(--text);
@@ -275,44 +265,4 @@ body::after{content:&apos;&apos;;position:fixed;inset:0;
   .nav-burger{display:flex}
   .contact-card{flex-direction:column}
   .sold{display:none}
-}
-&lt;/style&gt;
-&lt;/head&gt;
-&lt;body&gt;
-
-&lt;!-- LOADER --&gt;
-&lt;div id=&quot;loader&quot;&gt;
-  &lt;div class=&quot;ld-logo&quot;&gt;MXM&lt;/div&gt;
-  &lt;div class=&quot;ld-sub&quot;&gt;Marco X Marcella&lt;/div&gt;
-  &lt;div class=&quot;ld-bar&quot;&gt;&lt;div class=&quot;ld-fill&quot;&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;scanline&quot;&gt;&lt;/div&gt;
-
-&lt;!-- NAVBAR --&gt;
-&lt;nav class=&quot;navbar&quot;&gt;
-  &lt;div class=&quot;nav-logo&quot;&gt;
-    &lt;div class=&quot;nav-icon&quot;&gt;MXM&lt;/div&gt;
-    &lt;span class=&quot;nav-brand&quot;&gt;MXM&lt;/span&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;nav-links&quot;&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#features&quot;&gt;Keunggulan&lt;/a&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#how&quot;&gt;Cara Beli&lt;/a&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#pricing&quot;&gt;Harga&lt;/a&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#faq&quot;&gt;FAQ&lt;/a&gt;
-    &lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;Kontak&lt;/a&gt;
-  &lt;/div&gt;
-  &lt;a class=&quot;nav-cta&quot; href=&quot;https://t.me/sakodotexe&quot; target=&quot;_blank&quot;&gt;Beli Sekarang&lt;/a&gt;
-  &lt;button class=&quot;nav-burger&quot; onclick=&quot;document.querySelector(&apos;.mob-menu&apos;).classList.add(&apos;open&apos;)&quot;&gt;
-    &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
-  &lt;/button&gt;
-&lt;/nav&gt;
-
-&lt;!-- MOBILE MENU --&gt;
-&lt;div class=&quot;mob-menu&quot;&gt;
-  &lt;div class=&quot;mob-top&quot;&gt;
-    &lt;div class=&quot;mob-logo&quot;&gt;MX&lt;b&gt;M&lt;/b&gt;&lt;/div&gt;
-    &lt;button class=&quot;mob-close&quot; onclick=&quot;document.querySelector(&apos;.mob-menu&apos;).classList.remove(&apos;open&apos;)&quot;&gt;&times;&lt;/button&gt;
-  &lt;/div&gt;
-  &lt;a class=&quot;mob-item&quot; href=&quot;#h
+}</style><div id="loader"><div class="ld-logo">MXM</div><div class="ld-sub">Marco X Marcella</div><div class="ld-bar"><div class="ld-fill"></div></div></div><div class="scanline"></div><nav class="navbar"><div class="nav-logo"><div class="nav-icon">MXM</div><span class="nav-brand">MXM</span></div><div class="nav-links"><a class="nav-link" href="#home">Home</a> <a class="nav-link" href="#features">Keunggulan</a> <a class="nav-link" href="#how">Cara Beli</a> <a class="nav-link" href="#pricing">Harga</a> <a class="nav-link" href="#faq">FAQ</a> <a class="nav-link" href="#contact">Kontak</a></div><a class="nav-cta" href="https://t.me/sakodotexe" target="_blank">Beli Sekarang</a> <button class="nav-burger" onclick='document.querySelector(".mob-menu").classList.add("open")'><span></span><span></span><span></span></button></nav><div class="mob-menu"><div class="mob-top"><div class="mob-logo">MX<b>M</b></div><button class="mob-close" onclick='document.querySelector(".mob-menu").classList.remove("open")'>×</button></div><a class="mob-item" href="#home" onclick="closeMob()"><div class="mob-ic">🏠</div>Home</a> <a class="mob-item" href="#features" onclick="closeMob()"><div class="mob-ic">⭐</div>Keunggulan</a> <a class="mob-item" href="#how" onclick="closeMob()"><div class="mob-ic">📋</div>Cara Beli</a> <a class="mob-item" href="#pricing" onclick="closeMob()"><div class="mob-ic">💎</div>Harga</a> <a class="mob-item" href="#faq" onclick="closeMob()"><div class="mob-ic">❓</div>FAQ</a> <a class="mob-item" href="#contact" onclick="closeMob()"><div class="mob-ic">📩</div>Kontak</a></div><div class="content"><section id="home"><div class="wrap hero"><div class="hero-badge"><div class="hero-dot"></div>MXM Tools V2.0 · Premium MLBB</div><div class="hero-h1">MXM<span class="sub">TOOLS</span></div><div class="hero-rule"><span>Premium MLBB Tools V2.0</span></div><p class="hero-p"><strong>MXM Tools</strong> — Bukan tools biasa. Ini sistem optimasi gameplay MLBB terlengkap.

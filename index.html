@@ -1,27 +1,27 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>MXM Premium Store</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<style>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;id&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;/&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;/&gt;
+&lt;title&gt;MXM Premium Store&lt;/title&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.googleapis.com&quot;/&gt;
+&lt;link rel=&quot;preconnect&quot; href=&quot;https://fonts.gstatic.com&quot; crossorigin/&gt;
+&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Inter:wght@400;500;600;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;/&gt;
+&lt;style&gt;
 :root{
   --bg:#03080f;--bg2:#060d1a;--card:#080f1e;--card2:#0b1427;
   --blue:#3b8eff;--blue-dim:#2070e0;--blue-dark:#0a2250;
   --glow:rgba(59,142,255,.13);--border:rgba(59,142,255,.18);--border2:rgba(59,142,255,.08);
   --text:#dce9ff;--text-dim:#6a8fbd;
-  --font:'Inter',sans-serif;--font-d:'Bebas Neue',sans-serif;
+  --font:&apos;Inter&apos;,sans-serif;--font-d:&apos;Bebas Neue&apos;,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--font);overflow-x:hidden;-webkit-font-smoothing:antialiased}
-body::before{content:'';position:fixed;inset:0;
+body::before{content:&apos;&apos;;position:fixed;inset:0;
   background-image:linear-gradient(rgba(59,142,255,.025)1px,transparent 1px),linear-gradient(90deg,rgba(59,142,255,.025)1px,transparent 1px);
   background-size:52px 52px;pointer-events:none;z-index:0}
-body::after{content:'';position:fixed;inset:0;
+body::after{content:&apos;&apos;;position:fixed;inset:0;
   background:radial-gradient(ellipse 55% 35% at 50% 0%,rgba(59,142,255,.07) 0%,transparent 70%),
              radial-gradient(ellipse 35% 25% at 85% 85%,rgba(30,100,220,.05) 0%,transparent 60%);
   pointer-events:none;z-index:0}
@@ -100,7 +100,7 @@ body::after{content:'';position:fixed;inset:0;
 /* SECTION LABELS */
 .s-label{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:3px;
   text-transform:uppercase;color:var(--blue);margin-bottom:14px;font-weight:700}
-.s-label::before{content:'';width:20px;height:2px;background:var(--blue);border-radius:2px}
+.s-label::before{content:&apos;&apos;;width:20px;height:2px;background:var(--blue);border-radius:2px}
 .s-title{font-family:var(--font-d);font-size:clamp(38px,6vw,60px);color:#fff;
   line-height:1.05;margin-bottom:14px;letter-spacing:1px}
 .s-title .ac{color:var(--blue)}
@@ -119,7 +119,7 @@ body::after{content:'';position:fixed;inset:0;
   text-shadow:0 0 60px rgba(59,142,255,.18);margin-bottom:4px}
 .hero-h1 .sub{color:var(--blue);display:block;text-shadow:0 0 50px rgba(59,142,255,.45)}
 .hero-rule{display:flex;align-items:center;justify-content:center;gap:14px;margin:22px 0 14px}
-.hero-rule::before,.hero-rule::after{content:'';flex:1;max-width:72px;height:1px;background:var(--border2)}
+.hero-rule::before,.hero-rule::after{content:&apos;&apos;;flex:1;max-width:72px;height:1px;background:var(--border2)}
 .hero-rule span{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--text-dim)}
 .hero-p{font-size:15px;color:var(--text-dim);line-height:1.75;max-width:520px;margin:0 auto 36px}
 .hero-p strong{color:var(--text)}
@@ -149,7 +149,7 @@ body::after{content:'';position:fixed;inset:0;
 .feat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(285px,1fr));gap:14px;margin-top:44px}
 .feat-card{background:var(--card);border:1px solid var(--border2);border-radius:18px;
   padding:26px;position:relative;overflow:hidden;transition:all .28s}
-.feat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;
+.feat-card::after{content:&apos;&apos;;position:absolute;top:0;left:0;right:0;height:1px;
   background:linear-gradient(90deg,transparent,var(--blue),transparent);opacity:0;transition:opacity .3s}
 .feat-card:hover{border-color:var(--border);transform:translateY(-3px);background:var(--card2);
   box-shadow:0 14px 36px rgba(0,0,0,.28),0 0 16px rgba(59,142,255,.06)}
@@ -178,7 +178,7 @@ body::after{content:'';position:fixed;inset:0;
   padding:26px;position:relative;overflow:hidden;transition:all .28s}
 .price-card:hover{transform:translateY(-3px);box-shadow:0 18px 36px rgba(0,0,0,.3)}
 .price-card.pop{border-color:var(--blue);background:var(--card2);box-shadow:0 0 24px rgba(59,142,255,.08)}
-.price-card.pop::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--blue)}
+.price-card.pop::before{content:&apos;&apos;;position:absolute;top:0;left:0;right:0;height:2px;background:var(--blue)}
 .pop-badge{position:absolute;top:14px;right:14px;padding:3px 11px;background:var(--blue);color:#fff;
   font-size:9px;font-weight:800;letter-spacing:1px;text-transform:uppercase;border-radius:5px}
 .pr-dur{font-family:var(--font-d);font-size:30px;color:#fff;letter-spacing:1px;margin-bottom:4px}
@@ -192,7 +192,7 @@ body::after{content:'';position:fixed;inset:0;
 .pr-list li{display:flex;align-items:center;gap:9px;padding:7px 0;
   border-bottom:1px solid var(--border2);font-size:13px;color:var(--text-dim)}
 .pr-list li:last-child{border-bottom:none}
-.pr-list li::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0}
+.pr-list li::before{content:&apos;&apos;;width:5px;height:5px;border-radius:50%;background:var(--blue);flex-shrink:0}
 .pr-btn{display:block;width:100%;padding:12px;border-radius:11px;font-size:13px;font-weight:700;
   letter-spacing:.4px;text-decoration:none;text-align:center;transition:all .22s;cursor:pointer;border:none}
 .pr-btn-p{background:var(--blue);color:#fff;box-shadow:0 0 18px rgba(59,142,255,.22)}
@@ -254,7 +254,7 @@ body::after{content:'';position:fixed;inset:0;
 .ft-sub{font-size:12px;color:var(--text-dim);margin-bottom:20px}
 .ft-copy{font-size:11px;color:var(--text-dim);opacity:.45}
 
-/* SOLD & SCROLL TOP */
+/* SOLD &amp; SCROLL TOP */
 .sold{position:fixed;left:16px;bottom:16px;z-index:50;background:var(--card2);
   border:1px solid var(--border);border-radius:12px;padding:11px 16px;
   font-size:12px;font-weight:600;color:var(--text);
@@ -276,262 +276,43 @@ body::after{content:'';position:fixed;inset:0;
   .contact-card{flex-direction:column}
   .sold{display:none}
 }
-</style>
-</head>
-<body>
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-<!-- LOADER -->
-<div id="loader">
-  <div class="ld-logo">MXM</div>
-  <div class="ld-sub">Marco X Marcella</div>
-  <div class="ld-bar"><div class="ld-fill"></div></div>
-</div>
+&lt;!-- LOADER --&gt;
+&lt;div id=&quot;loader&quot;&gt;
+  &lt;div class=&quot;ld-logo&quot;&gt;MXM&lt;/div&gt;
+  &lt;div class=&quot;ld-sub&quot;&gt;Marco X Marcella&lt;/div&gt;
+  &lt;div class=&quot;ld-bar&quot;&gt;&lt;div class=&quot;ld-fill&quot;&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/div&gt;
 
-<div class="scanline"></div>
+&lt;div class=&quot;scanline&quot;&gt;&lt;/div&gt;
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="nav-logo">
-    <div class="nav-icon">MXM</div>
-    <span class="nav-brand">MXM</span>
-  </div>
-  <div class="nav-links">
-    <a class="nav-link" href="#home">Home</a>
-    <a class="nav-link" href="#features">Keunggulan</a>
-    <a class="nav-link" href="#how">Cara Beli</a>
-    <a class="nav-link" href="#pricing">Harga</a>
-    <a class="nav-link" href="#faq">FAQ</a>
-    <a class="nav-link" href="#contact">Kontak</a>
-  </div>
-  <a class="nav-cta" href="https://t.me/sakodotexe" target="_blank">Beli Sekarang</a>
-  <button class="nav-burger" onclick="document.querySelector('.mob-menu').classList.add('open')">
-    <span></span><span></span><span></span>
-  </button>
-</nav>
+&lt;!-- NAVBAR --&gt;
+&lt;nav class=&quot;navbar&quot;&gt;
+  &lt;div class=&quot;nav-logo&quot;&gt;
+    &lt;div class=&quot;nav-icon&quot;&gt;MXM&lt;/div&gt;
+    &lt;span class=&quot;nav-brand&quot;&gt;MXM&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;nav-links&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#home&quot;&gt;Home&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#features&quot;&gt;Keunggulan&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#how&quot;&gt;Cara Beli&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#pricing&quot;&gt;Harga&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#faq&quot;&gt;FAQ&lt;/a&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#contact&quot;&gt;Kontak&lt;/a&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;nav-cta&quot; href=&quot;https://t.me/sakodotexe&quot; target=&quot;_blank&quot;&gt;Beli Sekarang&lt;/a&gt;
+  &lt;button class=&quot;nav-burger&quot; onclick=&quot;document.querySelector(&apos;.mob-menu&apos;).classList.add(&apos;open&apos;)&quot;&gt;
+    &lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;
+  &lt;/button&gt;
+&lt;/nav&gt;
 
-<!-- MOBILE MENU -->
-<div class="mob-menu">
-  <div class="mob-top">
-    <div class="mob-logo">MX<b>M</b></div>
-    <button class="mob-close" onclick="document.querySelector('.mob-menu').classList.remove('open')">×</button>
-  </div>
-  <a class="mob-item" href="#home"    onclick="closeMob()"><div class="mob-ic">🏠</div>Home</a>
-  <a class="mob-item" href="#features" onclick="closeMob()"><div class="mob-ic">⭐</div>Keunggulan</a>
-  <a class="mob-item" href="#how"     onclick="closeMob()"><div class="mob-ic">📋</div>Cara Beli</a>
-  <a class="mob-item" href="#pricing" onclick="closeMob()"><div class="mob-ic">💎</div>Harga</a>
-  <a class="mob-item" href="#faq"     onclick="closeMob()"><div class="mob-ic">❓</div>FAQ</a>
-  <a class="mob-item" href="#contact" onclick="closeMob()"><div class="mob-ic">📩</div>Kontak</a>
-</div>
-
-<div class="content">
-
-  <!-- HERO -->
-  <section id="home">
-    <div class="wrap hero">
-      <div class="hero-badge"><div class="hero-dot"></div>MXM Tools V2.0 · Premium MLBB</div>
-      <div class="hero-h1">MXM<span class="sub">TOOLS</span></div>
-      <div class="hero-rule"><span>Premium MLBB Tools V2.0</span></div>
-      <p class="hero-p">
-        <strong>MXM Tools</strong> — Bukan tools biasa. Ini sistem optimasi gameplay MLBB terlengkap.
-        Visual ESP, DD Kimmy, Auto Skill — semua dalam satu key. Support Android &amp; Emulator.
-      </p>
-      <div class="hero-btns">
-        <a class="btn-p" href="https://t.me/sakodotexe" target="_blank">▲ &nbsp;Beli Sekarang</a>
-        <a class="btn-o" href="#pricing">↓ &nbsp;Lihat Paket</a>
-      </div>
-      <div class="stats">
-        <div class="stat"><div class="stat-v">4<b>K+</b></div><div class="stat-l">Total Users</div></div>
-        <div class="stat"><div class="stat-v"><b>24</b>/7</div><div class="stat-l">Support Aktif</div></div>
-        <div class="stat"><div class="stat-v">4<b> Tier</b></div><div class="stat-l">Paket VIP</div></div>
-        <div class="stat"><div class="stat-v"><b>6+</b></div><div class="stat-l">Fitur Premium</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- FEATURES -->
-  <section id="features">
-    <div class="wrap section">
-      <div class="s-label">Keunggulan</div>
-      <h2 class="s-title">Mengapa Memilih<br/><span class="ac">MXM Tools?</span></h2>
-      <p class="s-desc">Bukan sekadar tools biasa — sistem optimasi gaming yang dirancang membawa gameplay ke level berikutnya. Bukan cheat, ini science.</p>
-      <div class="feat-grid">
-        <div class="feat-card"><div class="feat-ic">🛰</div><div class="feat-n">01</div><div class="feat-h">Visual ESP</div><div class="feat-d">Menampilkan posisi dan awareness area lebih jelas untuk rotasi dan team fight.</div><div class="feat-tag">ESP SYSTEM</div></div>
-        <div class="feat-card"><div class="feat-ic">💉</div><div class="feat-n">02</div><div class="feat-h">DD Kimmy</div><div class="feat-d">Fitur khusus Kimmy — optimasi damage dan kontrol lebih stabil saat war.</div><div class="feat-tag">HERO SPECIAL</div></div>
-        <div class="feat-card"><div class="feat-ic">🗺</div><div class="feat-n">03</div><div class="feat-h">Maphack</div><div class="feat-d">Map visibility lebih luas untuk baca pergerakan lawan dan rencana rotasi.</div><div class="feat-tag">MAP SYSTEM</div></div>
-        <div class="feat-card"><div class="feat-ic">⚡</div><div class="feat-n">04</div><div class="feat-h">Auto Skill &amp; Kombo</div><div class="feat-d">Timing skill dan combo sequence jadi lebih cepat dan konsisten.</div><div class="feat-tag">AUTO SYSTEM</div></div>
-        <div class="feat-card"><div class="feat-ic">🚁</div><div class="feat-n">05</div><div class="feat-h">Drone View + Room Info</div><div class="feat-d">Sudut pandang lebih luas plus info room dan lobby secara instan.</div><div class="feat-tag">VIEW SYSTEM</div></div>
-        <div class="feat-card"><div class="feat-ic">🎯</div><div class="feat-n">06</div><div class="feat-h">Auto Retri + Auto Update</div><div class="feat-d">Timing retri presisi dan update otomatis untuk setiap patch terbaru MLBB.</div><div class="feat-tag">AUTO UPDATE</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- HOW IT WORKS -->
-  <section id="how">
-    <div class="wrap section">
-      <div class="s-label">Cara Kerja</div>
-      <h2 class="s-title">Cara <span class="ac">Pembelian</span></h2>
-      <p class="s-desc">Proses mudah dan cepat. Key langsung dikirim setelah konfirmasi pembayaran.</p>
-      <div class="how-grid">
-        <div class="how-card"><div class="how-num">01</div><div class="how-t">Pilih Paket</div><div class="how-d">Pilih durasi yang sesuai kebutuhan dari 4 pilihan paket tersedia.</div></div>
-        <div class="how-card"><div class="how-num">02</div><div class="how-t">Bayar QRIS</div><div class="how-d">Lakukan pembayaran via QRIS — mudah, cepat, dan aman.</div></div>
-        <div class="how-card"><div class="how-num">03</div><div class="how-t">Kirim Bukti</div><div class="how-d">Kirim bukti ke Telegram @sakodotexe untuk konfirmasi pembayaran.</div></div>
-        <div class="how-card"><div class="how-num">04</div><div class="how-t">Key Diterima</div><div class="how-d">Key langsung dikirim dan siap pakai. Support aktif 24/7 jika ada kendala.</div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- PRICING -->
-  <section id="pricing">
-    <div class="wrap section">
-      <div class="s-label">Premium</div>
-      <h2 class="s-title">Pilih <span class="ac">Paket VIP</span></h2>
-      <p class="s-desc">Empat pilihan dirancang untuk setiap kebutuhan — dari 3 hari hingga 30 hari. Support Android &amp; Emulator.</p>
-      <div class="price-grid">
-        <div class="price-card">
-          <div class="pr-dur">3 Days</div><div class="pr-tier">Tier — STARTER</div>
-          <div class="pr-old">Rp 22.000</div><div class="pr-price">Rp 17.500</div>
-          <div class="pr-save">Hemat 20%</div>
-          <ul class="pr-list"><li>Visual ESP</li><li>Map Awareness</li><li>Auto Update</li><li>Support 24/7</li></ul>
-          <a href="https://t.me/sakodotexe?text=Saya%20mau%20beli%20paket%203%20Days" target="_blank" class="pr-btn pr-btn-o">Beli Sekarang</a>
-        </div>
-        <div class="price-card">
-          <div class="pr-dur">7 Days</div><div class="pr-tier">Tier — REGULAR</div>
-          <div class="pr-old">Rp 56.000</div><div class="pr-price">Rp 45.000</div>
-          <div class="pr-save">Hemat 20%</div>
-          <ul class="pr-list"><li>Visual ESP</li><li>DD Kimmy</li><li>Maphack</li><li>Auto Update</li><li>Support 24/7</li></ul>
-          <a href="https://t.me/sakodotexe?text=Saya%20mau%20beli%20paket%207%20Days" target="_blank" class="pr-btn pr-btn-o">Beli Sekarang</a>
-        </div>
-        <div class="price-card pop">
-          <div class="pop-badge">Terpopuler</div>
-          <div class="pr-dur">14 Days</div><div class="pr-tier">Tier — ADVANCED</div>
-          <div class="pr-old">Rp 75.000</div><div class="pr-price">Rp 60.000</div>
-          <div class="pr-save">Hemat 20%</div>
-          <ul class="pr-list"><li>Semua Fitur</li><li>DD Kimmy Full</li><li>Auto Skill &amp; Kombo</li><li>Drone View</li><li>Support 24/7</li></ul>
-          <a href="https://t.me/sakodotexe?text=Saya%20mau%20beli%20paket%2014%20Days" target="_blank" class="pr-btn pr-btn-p">Beli Sekarang</a>
-        </div>
-        <div class="price-card">
-          <div class="pr-dur">30 Days</div><div class="pr-tier">Tier — ULTIMATE</div>
-          <div class="pr-old">Rp 100.000</div><div class="pr-price">Rp 80.000</div>
-          <div class="pr-save">Hemat 20%</div>
-          <ul class="pr-list"><li>Semua Fitur Full</li><li>Auto Retri</li><li>Room Info</li><li>Priority Support</li><li>Update Gratis</li></ul>
-          <a href="https://t.me/sakodotexe?text=Saya%20mau%20beli%20paket%2030%20Days" target="_blank" class="pr-btn pr-btn-o">Beli Sekarang</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- FAQ -->
-  <section id="faq">
-    <div class="wrap section">
-      <div class="s-label">FAQ</div>
-      <h2 class="s-title">Pertanyaan <span class="ac">Sering Ditanya</span></h2>
-      <div class="faq-list">
-        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Apakah key dikirim instant?<div class="faq-chev">∨</div></button><div class="faq-body"><div class="faq-ans">Ya, key dikirim cepat melalui Telegram setelah pembayaran terkonfirmasi. Biasanya hanya beberapa menit.</div></div></div>
-        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Aman untuk setiap update MLBB?<div class="faq-chev">∨</div></button><div class="faq-body"><div class="faq-ans">Tools dilengkapi auto update dan support aktif setiap kali ada patch terbaru dari MLBB.</div></div></div>
-        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Support aktif kapan saja?<div class="faq-chev">∨</div></button><div class="faq-body"><div class="faq-ans">Support aktif 24 jam sehari, 7 hari seminggu untuk bantuan login, update, dan pemasangan.</div></div></div>
-        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Bisa digunakan di emulator?<div class="faq-chev">∨</div></button><div class="faq-body"><div class="faq-ans">Bisa, tersedia support untuk Android dan emulator sesuai versi yang didukung.</div></div></div>
-        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Metode pembayaran apa saja?<div class="faq-chev">∨</div></button><div class="faq-body"><div class="faq-ans">Pembayaran bisa melalui QRIS lalu konfirmasi ke Telegram. Proses cepat dan mudah.</div></div></div>
-        <div class="faq-item"><button class="faq-btn" onclick="toggleFaq(this)">Apa itu fitur DD Kimmy?<div class="faq-chev">∨</div></button><div class="faq-body"><div class="faq-ans">Fitur khusus hero Kimmy yang mengoptimalkan damage output dan stabilisasi kontrol serangan saat war.</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- SOCIAL -->
-  <section id="social">
-    <div class="wrap section">
-      <div class="s-label">Social Media</div>
-      <h2 class="s-title">Follow <span class="ac">MXM</span></h2>
-      <p class="s-desc">Jangan lewatkan update terbaru, promo eksklusif, dan konten gaming dari kami.</p>
-      <div class="soc-list">
-        <a href="https://t.me/sakodotexe" target="_blank" class="soc-item">
-          <div class="soc-ic">✈️</div>
-          <div><div class="soc-name">Telegram</div><div class="soc-handle">@sakodotexe</div></div>
-          <div class="soc-arr">→</div>
-        </a>
-        <a href="https://tiktok.com/@sakocheto" target="_blank" class="soc-item">
-          <div class="soc-ic">🎵</div>
-          <div><div class="soc-name">TikTok</div><div class="soc-handle">@sakocheto</div></div>
-          <div class="soc-arr">→</div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap section">
-      <div class="s-label">Contact &amp; Seller</div>
-      <h2 class="s-title">Hubungi <span class="ac">Seller Resmi</span></h2>
-      <p class="s-desc">Hubungi seller resmi kami. Aktif 24 jam sehari, 7 hari seminggu.</p>
-      <div class="contact-card">
-        <div class="ct-avatar">🧑‍💻</div>
-        <div>
-          <div class="ct-badge">SELLER RESMI</div>
-          <div class="ct-name">MXM OFFICIAL</div>
-          <div class="ct-sub">Customer Support · 24/7 Active</div>
-          <div class="ct-rows">
-            <div class="ct-row"><strong>Telegram</strong><span>@sakodotexe</span></div>
-            <div class="ct-row"><strong>TikTok</strong><span>@sakocheto</span></div>
-            <div class="ct-row"><strong>Bayar</strong><span>QRIS → konfirmasi Telegram</span></div>
-          </div>
-          <div class="ct-btns">
-            <a class="btn-p" href="https://t.me/sakodotexe" target="_blank">✈️ &nbsp;Chat Telegram</a>
-            <a class="btn-o" href="https://tiktok.com/@sakocheto" target="_blank">🎵 &nbsp;Follow TikTok</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="divider"></div>
-  <footer class="footer">
-    <div class="ft-logo">MX<b>M</b></div>
-    <div class="ft-sub">Marco X Marcella · Premium MLBB Tools</div>
-    <div class="ft-copy">© 2025 MXM Official. All rights reserved.</div>
-  </footer>
-</div>
-
-<!-- SOLD COUNTER -->
-<div class="sold"><div class="sold-dot"></div>Terjual: <b id="soldCount">0</b></div>
-
-<!-- SCROLL TOP -->
-<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ke atas">↑</button>
-
-<script>
-// Loader
-setTimeout(()=>{ document.getElementById('loader').classList.add('hidden') }, 1900);
-
-// Sold counter
-let s=0;
-setInterval(()=>{ s+=Math.floor(Math.random()*2)+1; document.getElementById('soldCount').textContent=s; },2200);
-
-// Scroll top button
-window.addEventListener('scroll',()=>{
-  document.getElementById('scrollTop').classList.toggle('show', window.scrollY > 400);
-});
-
-// Mobile menu close on link click
-function closeMob(){ document.querySelector('.mob-menu').classList.remove('open'); }
-
-// FAQ toggle
-function toggleFaq(btn){
-  const item = btn.closest('.faq-item');
-  const isOpen = item.classList.contains('open');
-  document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-  if(!isOpen) item.classList.add('open');
-}
-</script>
-</body>
-</html>
+&lt;!-- MOBILE MENU --&gt;
+&lt;div class=&quot;mob-menu&quot;&gt;
+  &lt;div class=&quot;mob-top&quot;&gt;
+    &lt;div class=&quot;mob-logo&quot;&gt;MX&lt;b&gt;M&lt;/b&gt;&lt;/div&gt;
+    &lt;button class=&quot;mob-close&quot; onclick=&quot;document.querySelector(&apos;.mob-menu&apos;).classList.remove(&apos;open&apos;)&quot;&gt;&times;&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;a class=&quot;mob-item&quot; href=&quot;#h
